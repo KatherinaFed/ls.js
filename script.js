@@ -1,7 +1,5 @@
 const ls = async (filepath) => {
-
 	const file = fs.stat(filepath).then((stats) => {
-		
 		if (stats.isFile()) {
 			return [{
 				filepath: filepath.split('..').pop(),
